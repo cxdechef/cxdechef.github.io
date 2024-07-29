@@ -1,0 +1,49 @@
+---
+import Image from "astro/components/Image.astro";
+import Experience from "../components/Experience.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+import Navbar from "../components/Navbar.astro";
+import Projects from "../components/Projects.astro";
+import Skills from "../components/Skills.astro";
+import Summary from "../components/Summary.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title=".ehab - software engineer">
+  <header>
+    <!-- <Navbar /> -->
+    <Hero />
+  </header>
+
+  <Image
+    class="absolute -right-10 top-[28em] hidden md:block"
+    src="/images/copilot.png"
+    width="250"
+    height="250"
+    alt=""
+  />
+  <Image
+    class="absolute -left-10 top-[38em] hidden md:block"
+    src="/images/ghchar2.png"
+    width="230"
+    height="230"
+    alt=""
+  />
+  <Image
+    class="absolute -right-10 bottom-[88em] hidden md:block"
+    src="/images/ghchar3.png"
+    width="230"
+    height="230"
+    alt=""
+  />
+  <main class="flex flex-col items-center justify-center">
+    <Summary />
+    <Skills />
+    <Experience />
+    <Projects />
+  </main>
+  <Footer />
+</Layout>
+
+<style></style>

@@ -1,0 +1,97 @@
+---
+import Image from "astro/components/Image.astro";
+---
+
+<section class="pt-8 mb-16 px-4 flex flex-col">
+  <div class="card bg-gradient-to-r from-[#0b6cff] via-[#512bd4] to-[#512bd4]">
+    <div
+      class="flex flex-col md:flex-row items-center justify-around gap-2 md:gap-0"
+    >
+      <div class="flex flex-col md:flex-row items-center gap-2">
+        <div class="w-32 h-fit p-1 rounded-full">
+          <Image
+            class="p-2 bg-[#ffffff] rounded-full"
+            src="/images/emav.png"
+            alt=""
+            width="140"
+            height="140"
+          />
+        </div>
+        <div class="text-center md:text-left text-[#ffffff]">
+          <h3 class="font-bold text-3xl md:text-4xl lg:text-5xl">
+            Ehab Muhammad
+          </h3>
+          <p class="text-base md:text-xl lg:text-2xl font-bold">
+            Software Engineer based in Cairo, Egypt
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="font-bold text-center md:text-left text-[#ffffff]">
+          Let's connect
+        </h3>
+        <ul class="flex items-center gap-3">
+          <li>
+            <a href="">
+              <Image
+                src="/images/social/resume.svg"
+                width="20"
+                height="20"
+                alt=""/>
+              </a>
+          </li>
+          <li>
+            <a href="">
+              <Image
+                src="/images/social/linkedin.svg"
+                width="20"
+                height="20"
+                alt=""/>
+              </a>
+          </li>
+          <li>
+            <a href="">
+              <Image
+                src="/images/social/github.svg"
+                width="20"
+                height="20"
+                alt=""/>
+              </a>
+          </li>
+          <li>
+            <a href="mailto:em.ehabm@gmail.com">
+              <Image
+                src="/images/social/gmail.svg"
+                width="20"
+                height="20"
+                alt=""/>
+              </a>
+          </li>
+          <li>
+            <a href="">
+              <Image
+                src="/images/social/x.svg"
+                width="20"
+                height="20"
+                alt="" />
+              </a>
+          </li>
+          <li>
+            <a href="">
+              <Image
+                src="/images/social/facebook.svg"
+                width="20"
+                height="20"
+                alt=""/>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col items-center gap-6 justify-center py-32 text-center">
+    <p class="text-lg md:text-2xl font-helvetica font-medium">As a</p>
+    <h2 class="text-3xl md:text-6xl font-bold">Full-Stack Web developer.</br>I am passionate about.</h2>
+    <p class="text-lg md:text-2xl font-helvetica ">Creating beautiful, functional and high performance applications that provide</br>a seamless solutions, and a keen eye for design and clean code.</br>I believe that every application should prioritize the user's needs</br>and reflect the content and purpose of the application.</p>
+  </div>
+</section>

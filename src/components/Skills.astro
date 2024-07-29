@@ -1,0 +1,50 @@
+---
+import Image from "astro/components/Image.astro";
+---
+
+<section id="skills" class=" flex flex-col mb-8 px-4 ">
+  <h2 class="text-6xl font-bold mb-8 text-center md:text-left text-[#622aff]">Skills</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-x-4 ">
+    <div class="card text-center md:text-left">
+      <h3 class="text-3xl font-bold text-[#622aff]">Computer Science</h3>
+      <p class="text-2xl font-bold">Fundamentals and Basics</p>
+      <div class="flex flex-col items-center justify-center">
+        <img src="/images/cs.svg" width="636" height="300" class="my-8" alt="">
+        <ul class="flex flex-col gap-2 text-center items-center">
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">C · C++ · Object-Oriented Programming</li>
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">Data Structures · Algorithms</li>
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">Databases · Networking · Software Testing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card text-center md:text-left">
+      <h3 class="text-3xl font-bold text-[#622aff]">Technologies</h3>
+      <p class="text-2xl font-bold">Both sides Front-End</br>and Back-End</p>
+      <div class="flex flex-col items-center justify-center">
+        <div class="grid grid-cols-2 my-8">
+          <img src="/images/fe.svg" width="636" height="300" class=""  alt="">
+          <img src="/images/be.svg" width="636" height="300" class=""  alt="">
+        </div>
+        <ul class="flex flex-col gap-2 text-center items-center">
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">Angular · ASP.NET Core</li>
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">HTML · CSS · JavaScript/TypeScript</li>
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">SASS · Bootstrap/TailwindCSS</li>
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">MS SQL Server · EF Core · LINQ</li>
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">Git/GitHub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card text-center md:text-left">
+      <h3 class="text-3xl font-bold text-[#622aff]">Soft Skills</h3>
+      <p class="text-2xl font-bold">The superpowers of the real world</p>
+      <div class="flex flex-col items-center justify-center">
+        <img src="/images/softskills.svg" width="636" height="300" class="my-8"  alt="">
+        <ul class="flex flex-col gap-2 text-center items-center ">
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">Problem Solving & Critical thinking</li>
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">Communication & Collaboration in teams</li>
+          <li class="skill bg-gradient-to-r from-[#2a4eff] to-[#622aff]">Adaptable & quick to learn new techs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

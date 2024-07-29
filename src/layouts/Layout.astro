@@ -1,0 +1,122 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="relative">
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @font-face {
+    font-family: "SpaceGrotesk";
+    src: url("/public/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "SpaceGrotesk";
+    src: url("/public/fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Helvetica";
+    src: url("../../public/fonts/HelveticaNeueRegular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Helvetica";
+    src: url("../../public/fonts/HelveticaNeueMedium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Helvetica";
+    src: url("../../public/fonts/HelveticaNeueBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Helvetica";
+    src: url("../../public/fonts/HelveticaNeueBlack.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .font-spacegrotesk {
+    font-family: "SpaceGrotesk";
+  }
+
+  .font-helvetica {
+    font-family: "Helvetica";
+  }
+
+  h2,
+  h3 {
+    font-family: "Helvetica";
+  }
+
+  h4,
+  p,
+  li {
+    font-family: "SpaceGrotesk";
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  body {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 32px;
+    overflow: hidden;
+    padding: 2rem;
+  }
+
+  .skill {
+    background-color: rgb(29 29 31 / 0.08);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.6rem;
+    border-radius: 6px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+</style>
